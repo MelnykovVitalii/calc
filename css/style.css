@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Roboto+Mono:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@600&family=Oswald:wght@500&family=Roboto+Mono:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: #4caf50;
+  text-align: center;
+  padding: 40px 10px;
+}
+.header__title {
+  font-size: 32px;
+  letter-spacing: 10px;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+.title {
+  background-color: #ffffff;
+  padding: 10px;
+  display: inline-block;
+  border: 3px solid #ff9800;
+  border-radius: 5px;
+}
+
+.wrapper {
+  max-width: 1180px;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.fraction {
+  display: flex;
+  align-items: center;
+}
+
+.fraction__name {
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.__fraction input {
+  border: 2px solid #4caf50;
+  height: 20px;
+  width: 40px;
+  outline: none;
+  margin: 5px 0px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.line {
+  background: #000000;
+  height: 2px;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.mark {
+  padding: 0px 14px;
+  display: flex;
+  flex-direction: column;
+}
+.btn__wrapper {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border: 1px solid #ff9800;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #ff9800;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #ff9800;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.result__block {
+  text-align: center;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #4caf50;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.result__wrapper {
+  max-width: 40px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.result__header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  background-color: #4caf50;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.result__numerator,
+.result__denumerator,
+.result__default {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+}

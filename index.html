@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My calc</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__title">
+        <span class="title">Калькулятор дробей</span>
+      </p>
+    </header>
+    <div class="wrapper">
+      <form action="#">
+        <div class="body">
+          <div class="fraction">
+            <p class="fraction__name">Первая дробь</p>
+            <div class="__fraction">
+              <input id="firstNumerator" type="number" />
+              <hr class="line" />
+              <input id="firstDenominator" type="number" />
+            </div>
+          </div>
+
+          <div class="mark">
+            <div>
+              <input
+                type="radio"
+                id="Choice1"
+                name="mark"
+                value="multiplication"
+              />
+              <label for="Choice1">Умножить</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="Choice2"
+                name="mark"
+                value="division"
+                disabled
+              />
+              <label for="Choice2">Поделить</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="Choice3"
+                name="mark"
+                value="subtraction"
+                disabled
+              />
+              <label for="Choice3">Вычесть</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="Choice4"
+                name="mark"
+                value="addition"
+                disabled
+              />
+              <label for="Choice4">Сложить</label>
+            </div>
+          </div>
+          <div class="fraction">
+            <p class="fraction__name">Вторая дробь</p>
+            <div class="__fraction">
+              <input id="secondNumerator" type="number" />
+              <hr class="line" />
+              <input id="secondDenominator" type="number" />
+            </div>
+          </div>
+        </div>
+
+        <div class="btn__wrapper">
+          <button class="btn btn-submit" id="submit" type="submit">
+            Результат
+          </button>
+        </div>
+        <div class="result__block">
+          <!-- <p class="result__header">Ответ</p>
+          <div class="result__wrapper">
+            <div class="result__numerator">4</div>
+            <hr class="line" />
+            <div class="result__denumerator">5</div>
+          </div> -->
+        </div>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
